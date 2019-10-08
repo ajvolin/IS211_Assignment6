@@ -46,16 +46,24 @@ def convert(from_unit, to_unit, value):
             'celsius': lambda x: round((float(x) - 273.15), 2)
         },
         'miles': {
-            'yards': lambda x:  round((float(x) * 1760), 2),
+            'yards': lambda x: round((float(x) * 1760), 2),
+            'meters': lambda x: round((float(x) * 1609.344), 2),
             'feet': lambda x: round((float(x) * 5280), 2)
         },
         'yards': {
-            'miles': lambda x:  round((float(x) / 1760), 2),
+            'miles': lambda x: round((float(x) / 1760), 2),
+            'meters': lambda x: round((float(x) / 1.094), 2),
             'feet': lambda x: round((float(x) * 3), 2)
+        },
+        'meters': {
+            'miles': lambda x: round((float(x) / 1609.344), 2),
+            'yards': lambda x: round((float(x) * 1.094), 2),
+            'feet': lambda x: round((float(x) * 3.281), 2)
         },
         'feet': {
             'miles': lambda x: round((float(x) / 5280), 2),
-            'yards': lambda x: round((float(x) / 3), 2)
+            'yards': lambda x: round((float(x) / 3), 2),
+            'meters': lambda x: round((float(x) / 3.281), 2)
         }
     }
 

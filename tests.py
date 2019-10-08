@@ -122,11 +122,17 @@ class ConversionsRefactoredKnownValues(unittest.TestCase):
                         ('kelvin', 'celsius', 0.00, -273.15),
                         ('kelvin', 'fahrenheit', -100.00, -639.67),
                         ('miles', 'yards', 1.00, 1760.00),
+                        ('miles', 'meters', 2.00, 3218.69),
                         ('miles', 'feet', 2.00, 10560.00),
                         ('yards', 'miles', 6000.00, 3.41),
+                        ('yards', 'meters', 300.00, 274.22),
                         ('yards', 'feet', 120.00, 360.00),
+                        ('meters', 'miles', 60000.00, 37.28),
+                        ('meters', 'yards', 150.00, 164.10),
+                        ('meters', 'feet', 157.00, 515.12),
                         ('feet', 'miles', 2640.00, 0.50),
-                        ('feet', 'yards', 9000.00, 3000.00)
+                        ('feet', 'yards', 9000.00, 3000.00),
+                        ('feet', 'meters', 100000.00, 30478.51)
                     )
 
 
