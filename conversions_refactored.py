@@ -13,7 +13,7 @@ class ConversionNotPossibleException(Exception):
     pass
 
 def convert(from_unit, to_unit, value):
-    """This function converts from unit to another.
+    """This function converts from one unit to another.
     Parameters:
         from_unit (str): the unit to convert from.
         to_unit (str): the unit to convert to.
